@@ -1,22 +1,27 @@
 {
-  "name": "Asiakas Oy",
-  "tagline": "<täydennä: lyhyt lupaus>",
+  "name": "Boostaamo",
+  "tagline": "Yritysten kasvuyhteisö",
   "locale": "fi_FI",
-  "contactEmail": "<täydennä>",
+  "contactEmail": "<täydennä: julkinen sähköposti>",
   "nav": [
-    { "label": "Etusivu", "href": "/" },
+    { "label": "Kasvukoneisto", "href": "/kasvukoneisto" },
+    { "label": "Palvelut", "href": "/palvelut" },
+    { "label": "Yhtiöt", "href": "/yhtiot" },
+    { "label": "Meistä", "href": "/meista" },
     { "label": "Ota yhteyttä", "href": "/yhteys" }
   ],
-  "footerLinks": [
+  "cta": { "label": "Ilmoittaudu webinaariin", "href": "/webinaarit" },
+  "companies": [
+    { "label": "Growth Flame Company", "href": "/yhtiot/gfc", "id": "gfc" },
+    { "label": "Dimma", "href": "/yhtiot/dimma", "id": "dimma" },
+    { "label": "Grofi", "href": "/yhtiot/grofi", "id": "grofi" },
+    { "label": "AI Softarobotit", "href": "/yhtiot/ai-softarobotit", "id": "ai-softarobotit" },
+    { "label": "Bistek", "href": "/yhtiot/bistek", "id": "bistek" }
+  ],
+  "siteLinks": [
+    { "label": "Kasvukoneiston katsastus", "href": "/kasvukoneiston-katsastus" },
+    { "label": "Webinaarit", "href": "/webinaarit" },
     { "label": "Tietosuoja", "href": "/tietosuoja" }
   ],
-  "boostaamoBadge": true,
-  "ecosystem": [
-    { "label": "Growth Flame Company", "href": "https://www.gfc.fi" },
-    { "label": "Dimma", "href": "https://www.dimma.fi" },
-    { "label": "Grofi", "href": "https://www.grofi.fi" },
-    { "label": "AI Softarobotit", "href": "https://www.softarobotit.fi" },
-    { "label": "HR Impact", "href": "https://www.hrimpact.fi" },
-    { "label": "Bistek", "href": "https://www.bistek.fi" }
-  ]
+  "legalEntity": "Kriha Invest Oy"
 }

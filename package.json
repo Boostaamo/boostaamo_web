@@ -1,14 +1,18 @@
 {
-  "name": "web-pohja",
+  "name": "boostaamo-web",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "tarkista:taydenna": "node scripts/tarkista-taydenna.mjs"
   },
   "dependencies": {
+    "@fontsource/archivo": "^5.3.0",
+    "@fontsource/ibm-plex-mono": "^5.3.0",
+    "@fontsource/ibm-plex-sans": "^5.3.0",
     "gray-matter": "^4.0.3",
     "marked": "^14.0.0",
     "next": "^15.0.0",

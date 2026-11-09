@@ -1,0 +1,19 @@
+---
+title: "Palvelut"
+description: "Boostaamon palvelut: maksuttomat sisääntulot, johtoryhmäkoulutukset ja syväkatsastukset."
+updated: 2026-11-09
+---
+
+<div class="pg">
+<section class="hero" style="padding:64px 0 40px"><div class="wrap">
+<div class="mono" style="color:#5E5959;margin-bottom:16px">Palvelut</div>
+<h1>Missä vaiheessa sinun kasvusi on?</h1>
+<p class="lead">Kasvu muodostuu kokonaisuudesta, mutta kaikkea ei tarvitse ratkaista kerralla. Aloita siitä, mikä on sinulle nyt ajankohtaista.</p>
+</div></section><section style="padding:48px 0;"><div class="wrap"><h2>"Haluan ensin ymmärtää, mikä kasvua jarruttaa"</h2><p style="margin-top:10px">Et ehkä vielä tiedä, onko pullonkaula johtamisessa, myynnissä, kassassa vai omassa ajassasi. Nämä ovat maksuttomia tai kevyitä tapoja saada kokonaiskuva:</p><div class="grid2"><div class="card"><h3><a data-track="katsastus_aloitus" href="/kasvukoneiston-katsastus">Kasvukoneiston katsastus</a></h3><p style="margin-top:8px">Noin vartin kysely ja 45 minuutin keskustelu kasvuarkkitehdin kanssa. Näet kolme suurinta pullonkaulaa.</p><span class="free">Maksuton</span></div><div class="card"><h3><a href="/webinaarit">Webinaarit</a></h3><p style="margin-top:8px">45 minuuttia yhdestä aiheesta ja aikaa omille kysymyksille.</p><span class="free">Maksuton</span></div><div class="card"><h3>Pikakatsastus</h3><p style="margin-top:8px">30–45 minuutin keskustelu yhden osa-alueen asiantuntijan kanssa, kun tiedät jo, mistä haluat puhua.</p><span class="free">Maksuton</span></div><div class="card"><h3><a href="/palvelut/johtoryhmakoulutukset">Johtoryhmäkoulutus</a></h3><p style="margin-top:8px">Kolmen tunnin työpaja, jonka jälkeen koko johtoryhmällä on sama kuva yhdestä aiheesta, esimerkiksi tekoälystä.</p><span class="price">850 € <small style="font-weight:600">alv 0 %</small></span></div></div></div></section><section style="padding:48px 0;padding-top:0"><div class="wrap"><div class="card soft"><h2>"Tiedän, missä ongelma on, mutta en tiedä miksi"</h2><p style="margin-top:10px">Kun pullonkaula on tunnistettu, sen syy kannattaa selvittää ennen kuin siihen käytetään rahaa. <a href="/palvelut/syvakatsastukset"><b>Syväkatsastuksessa</b></a> asiantuntija haastattelee, analysoi ja kokoaa yhteenvedon. Saat selvän ehdotuksen siitä, mitä kannattaa tehdä ensin.</p><span class="price">850 € <small style="font-weight:600">alv 0 %</small></span></div></div></section><section style="padding:48px 0;padding-top:0"><div class="wrap"><div class="card soft"><h2>"Haluan korjata sen"</h2><p style="margin-top:10px">Kun tiedät, mitä pitää muuttaa, Boostaamon asiantuntijayhtiöt tekevät työn kanssasi: johtamisen kehittämisen, myynnin ja markkinoinnin, talouden ja rahoituksen, automaation ja tekoälyn sekä ohjelmistot. Työ alkaa aina lyhyellä aloituskatsastuksella, joka sisältyy hintaan, jotta tekeminen osuu oikeaan.</p><a class="btn o" href="/yhtiot">Katso, kuka tekee mitäkin</a></div></div></section><section style="padding:48px 0;padding-top:0"><div class="wrap"><div class="card soft"><h2>"Haluan, että kasvua johdetaan jatkuvasti"</h2><p style="margin-top:10px">Kun kasvu on käynnissä, sen suunta pitää tarkistaa säännöllisesti. Growth Boardissa seuraat kasvusi mittareita yhdessä kasvuarkkitehdin kanssa ja näet ajoissa, jos jokin osa alkaa jarruttaa. <span class="todo">&lt;täydennä: Growth Boardin sisältö&gt;</span></p></div></div></section><section id="yhteys" style="padding-top:24px">
+  <div class="wrap"><div class="panel" style="margin-top:0">
+    <h2>Haluatko jutella ensin?</h2>
+    <p style="margin-top:12px">Varaa maksuton keskustelu kasvuarkkitehdin kanssa, niin katsotaan yhdessä juuri sinun tilannettasi.</p>
+    <a class="btn" href="/yhteys">Varaa keskustelu</a>
+  </div></div>
+</section>
+</div>

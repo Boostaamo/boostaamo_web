@@ -42,24 +42,43 @@ export async function POST(req: Request) {
     return NextResponse.json({ ok: true });
   }
 
+  const kinds = ["webinaari", "yhteys", "koulutus", "purku"];
+  const kind = kinds.includes(str(body.kind, 20)) ? str(body.kind, 20) : "yhteys";
   const name = str(body.name, 200);
   const email = str(body.email, 200);
-  const company = str(body.company, 200);
-  const message = str(body.message, 4000);
+  const phone = str(body.phone, 60);
+  const emailOk = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 
-  if (!name || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-    return NextResponse.json({ ok: false, error: "Tarkista nimi ja sähköpostiosoite." }, { status: 400 });
+  if (!name) {
+    return NextResponse.json({ ok: false, error: "Kirjoita nimesi." }, { status: 400 });
   }
-  if (body.consent !== true) {
-    return NextResponse.json({ ok: false, error: "Hyväksy tietojen käsittely lähettääksesi lomakkeen." }, { status: 400 });
+  // Webinaari ja koulutus tarvitsevat sähköpostin. Yhteydenotossa ja purussa riittää sähköposti tai puhelin.
+  const needsEmail = kind === "webinaari" || kind === "koulutus";
+  if (needsEmail ? !emailOk : !emailOk && phone.length < 5) {
+    return NextResponse.json(
+      { ok: false, error: needsEmail ? "Tarkista sähköpostiosoite." : "Anna sähköpostiosoite tai puhelinnumero." },
+      { status: 400 },
+    );
+  }
+  if (email && !emailOk) {
+    return NextResponse.json({ ok: false, error: "Tarkista sähköpostiosoite." }, { status: 400 });
   }
 
   const lead = {
+    kind,
+    webinar: str(body.webinar, 200),
     name,
     email,
-    company,
-    message,
-    consent: true,
+    phone,
+    company: str(body.company, 200),
+    message: str(body.message, 4000),
+    preferredTime: str(body.preferredTime, 200),
+    topic: str(body.topic, 200),
+    participants: str(body.participants, 20),
+    // Kvartaalikirje: erillinen, oletuksena pois päältä oleva valinta
+    newsletter: body.newsletter === true,
+    // Lomakkeella on tietosuojaselosteen mukainen ilmoitus (ei erillistä suostumusruutua)
+    privacyNoticeShown: true,
     source: str(body.source, 100),
     page: str(body.page, 300),
     referrer: str(body.referrer, 300),
