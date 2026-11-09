@@ -1,0 +1,77 @@
+/* Väri- ja tyylimuuttujat. Korvaa arvot asiakkaan design systemin arvoilla (vaihe 3). */
+:root {
+  --color-bg: #ffffff;
+  --color-text: #1b1f24;
+  --color-muted: #5b6470;
+  --color-accent: #0b5fff;
+  --color-accent-contrast: #ffffff;
+  --color-border: #d9dde3;
+  --color-surface: #f5f7fa;
+  --font-body: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --radius: 8px;
+  --space: 1rem;
+  --max-width: 72rem;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  color: var(--color-text);
+  background: var(--color-bg);
+  line-height: 1.6;
+}
+a { color: var(--color-accent); }
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible {
+  outline: 3px solid var(--color-accent);
+  outline-offset: 2px;
+}
+.container { max-width: var(--max-width); margin: 0 auto; padding: 0 var(--space); }
+.skip-link { position: absolute; left: -999px; top: 0; background: var(--color-bg); padding: .5rem 1rem; z-index: 100; }
+.skip-link:focus { left: 0; }
+
+.site-header { border-bottom: 1px solid var(--color-border); }
+.header-inner { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding-top: .75rem; padding-bottom: .75rem; flex-wrap: wrap; }
+.brand { font-weight: 700; font-size: 1.15rem; text-decoration: none; color: var(--color-text); }
+.nav { list-style: none; display: flex; flex-wrap: wrap; gap: 1rem; margin: 0; padding: 0; }
+
+main { padding: 2rem 0 3rem; min-height: 60vh; }
+.prose { max-width: 46rem; }
+.prose h1 { font-size: clamp(1.8rem, 4vw, 2.6rem); line-height: 1.2; }
+.prose h2 { margin-top: 2rem; }
+.prose img { max-width: 100%; height: auto; }
+
+.button {
+  display: inline-block; font: inherit; cursor: pointer;
+  background: var(--color-accent); color: var(--color-accent-contrast);
+  border: 2px solid var(--color-accent); border-radius: var(--radius);
+  padding: .65rem 1.2rem; text-decoration: none; font-weight: 600;
+}
+.button.secondary { background: transparent; color: var(--color-accent); }
+.button:disabled { opacity: .6; cursor: progress; }
+.link-button { background: none; border: 0; padding: 0; font: inherit; color: var(--color-accent); text-decoration: underline; cursor: pointer; }
+
+.form { max-width: 34rem; margin-top: 2rem; display: grid; gap: 1rem; }
+.field { display: grid; gap: .35rem; }
+.field input[type="text"], .field input[type="email"], .field textarea {
+  font: inherit; padding: .6rem .75rem; border: 1px solid var(--color-border); border-radius: var(--radius); width: 100%;
+}
+.field.checkbox { grid-template-columns: auto 1fr; align-items: start; gap: .6rem; }
+.hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+.notice { padding: 1rem; background: var(--color-surface); border-radius: var(--radius); }
+.error { color: #b00020; }
+
+.site-footer { border-top: 1px solid var(--color-border); background: var(--color-surface); padding: 2rem 0; font-size: .95rem; }
+.footer-row { display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+.ecosystem { margin-top: 1.5rem; }
+.muted { color: var(--color-muted); margin: .25rem 0; }
+
+.consent {
+  position: fixed; left: 1rem; right: 1rem; bottom: 1rem; max-width: 36rem; margin: 0 auto;
+  background: var(--color-bg); border: 1px solid var(--color-border); border-radius: var(--radius);
+  box-shadow: 0 8px 30px rgba(0,0,0,.15); padding: 1rem; z-index: 50;
+}
+.consent-actions { display: flex; gap: .5rem; flex-wrap: wrap; }
+
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }

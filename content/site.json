@@ -1,0 +1,22 @@
+{
+  "name": "Asiakas Oy",
+  "tagline": "<täydennä: lyhyt lupaus>",
+  "locale": "fi_FI",
+  "contactEmail": "<täydennä>",
+  "nav": [
+    { "label": "Etusivu", "href": "/" },
+    { "label": "Ota yhteyttä", "href": "/yhteys" }
+  ],
+  "footerLinks": [
+    { "label": "Tietosuoja", "href": "/tietosuoja" }
+  ],
+  "boostaamoBadge": true,
+  "ecosystem": [
+    { "label": "Growth Flame Company", "href": "https://www.gfc.fi" },
+    { "label": "Dimma", "href": "https://www.dimma.fi" },
+    { "label": "Grofi", "href": "https://www.grofi.fi" },
+    { "label": "AI Softarobotit", "href": "https://www.softarobotit.fi" },
+    { "label": "HR Impact", "href": "https://www.hrimpact.fi" },
+    { "label": "Bistek", "href": "https://www.bistek.fi" }
+  ]
+}
