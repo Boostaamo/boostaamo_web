@@ -1,0 +1,19 @@
+---
+title: "Kasvukoneisto"
+description: "Kasvukoneisto jakaa yrityksen kasvun kuuteen osaan: johtaminen, myynti, talous, automaatio, ohjelmistot ja ihmiset."
+updated: 2026-11-09
+---
+
+<div class="pg">
+<section class="hero" style="padding:64px 0 40px"><div class="wrap">
+<div class="mono" style="color:#5E5959;margin-bottom:16px">Kasvukoneisto</div>
+<h1>Kasvu muodostuu kokonaisuudesta</h1>
+<p class="lead">Kun kasvu pysähtyy, syy näyttää usein yhdeltä asialta: myynti ei vedä, kassa on tiukalla tai omat päivät eivät riitä. Useimmiten taustalla on kuitenkin se, että koneiston osat eivät toimi yhdessä. Siksi kasvukoneistoa kannattaa katsoa kokonaisuutena.</p>
+</div></section><section style="padding:48px 0;"><div class="wrap"><div class="mono" style="color:#5E5959">Kuusi osaa ja miksi ne ratkaisevat</div><div class="grid3"><div class="card"><div class="mono" style="color:#5E5959">Ohjausjärjestelmä</div><h3 style="margin:6px 0 10px">Johtaminen</h3><p>Jos suunta, päätökset ja vastuut ovat yhden ihmisen varassa, kasvu on sen ihmisen ajan varassa. Toimiva ohjausjärjestelmä tarkoittaa, että yritys pysyy kurssissa ilman, että kaikki kulkee sinun kauttasi.</p><a data-track="click_yhtio" data-yhtio="gfc" href="/yhtiot/gfc" style="font-weight:600">Growth Flame Company →</a></div><div class="card"><div class="mono" style="color:#5E5959">Moottori</div><h3 style="margin:6px 0 10px">Myynti ja markkinointi</h3><p>Kasvu tarvitsee uusia asiakkaita tasaisesti, ei vain silloin, kun ehdit myydä itse. Moottori tekee myynnistä ennustettavaa.</p><a data-track="click_yhtio" data-yhtio="dimma" href="/yhtiot/dimma" style="font-weight:600">Dimma →</a></div><div class="card"><div class="mono" style="color:#5E5959">Polttoaine</div><h3 style="margin:6px 0 10px">Talous ja rahoitus</h3><p>Kasvu sitoo rahaa ennen kuin se tuottaa sitä. Kun tiedät, mihin kassa riittää ja mistä rahoitus tulee, voit kasvaa hallitusti.</p><a data-track="click_yhtio" data-yhtio="grofi" href="/yhtiot/grofi" style="font-weight:600">Grofi →</a></div><div class="card"><div class="mono" style="color:#5E5959">Vaihteisto</div><h3 style="margin:6px 0 10px">Automaatio ja tekoäly</h3><p>Kun rutiinit hoituvat automaattisesti, ihmisten aika vapautuu siihen, mikä kasvattaa yritystä.</p><a data-track="click_yhtio" data-yhtio="ai-softarobotit" href="/yhtiot/ai-softarobotit" style="font-weight:600">AI Softarobotit →</a></div><div class="card"><div class="mono" style="color:#5E5959">Teknologia</div><h3 style="margin:6px 0 10px">Ohjelmistot</h3><p>Oikeat järjestelmät tekevät kasvusta toistettavaa. Väärät järjestelmät hidastavat jokaista uutta asiakasta ja jokaista uutta työntekijää.</p><a data-track="click_yhtio" data-yhtio="bistek" href="/yhtiot/bistek" style="font-weight:600">Bistek →</a></div><div class="card"><div class="mono" style="color:#5E5959">Ihmiset</div><h3 style="margin:6px 0 10px">Avainhenkilöt</h3><p>Kasvu on lopulta oikeiden ihmisten varassa. Avainhenkilöiden osaaminen tulee Boostaamoon HR Impactin myötä. <span class="todo">&lt;täydennä: aikataulu&gt;</span></p></div></div></div></section><section style="padding:48px 0;"><div class="wrap"><div class="card soft"><h2>Mistä näet, mikä osa jarruttaa?</h2><p style="margin-top:12px">Kasvukoneiston katsastus näyttää kuuden osan tilan ja kolme suurinta pullonkaulaa noin vartissa.</p><a data-track="katsastus_aloitus" class="btn" href="/kasvukoneiston-katsastus">Tee Kasvukoneiston katsastus</a></div></div></section><section id="yhteys" style="padding-top:24px">
+  <div class="wrap"><div class="panel" style="margin-top:0">
+    <h2>Haluatko jutella ensin?</h2>
+    <p style="margin-top:12px">Varaa maksuton keskustelu kasvuarkkitehdin kanssa, niin katsotaan yhdessä juuri sinun tilannettasi.</p>
+    <a class="btn" href="/yhteys">Varaa keskustelu</a>
+  </div></div>
+</section>
+</div>
