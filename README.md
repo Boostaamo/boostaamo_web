@@ -1,6 +1,6 @@
 # web-pohja
 
-Dimman verkkosivustopohja, jolla Dimma tuottaa sivustot asiakkailleen. Samaa pohjaa käytetään myös Boostaamo-konsernin yhtiöiden sivustoihin (`web-<yhtiö>`); konsernin sivustokokonaisuutta hallitaan repossa `boostaamo-web`. Next.js (App Router, TypeScript), sisältö Markdown-tiedostoina, lomake ja liidit, analytiikka suostumuksella ja julkaisu Vercelin kautta GitHubista.
+Dimman verkkosivustopohja, jolla Dimma tuottaa sivustot asiakkailleen. Samaa pohjaa käytetään myös Boostaamo-konsernin yhtiöiden sivustoihin (`web-<yhtiö>`); konsernin sivustokokonaisuutta hallitaan repossa `boostaamo-core` (kansio `verkkosivut`). Next.js (App Router, TypeScript), sisältö Markdown-tiedostoina, lomake ja liidit, analytiikka suostumuksella ja julkaisu Vercelin kautta GitHubista.
 
 ## Uusi sivusto tästä pohjasta
 1. GitHubissa: avaa tämä repo ja valitse "Use this template" (tai kopioi kansio). Nimeä uusi repo `web-<asiakas>`, yksityinen, Boostaamo-organisaatioon.
