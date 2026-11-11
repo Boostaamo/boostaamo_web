@@ -33,8 +33,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     logo: `${site.url}/icon.svg`,
   };
   return (
-    <html lang="fi">
+    <html lang="fi" suppressHydrationWarning>
       <body>
+        {/* Väliaikainen: ilmeen vaihtoehtojen vertailu esikatselussa (?vaihtoehto=2). Poistetaan ennen julkaisua. */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html:
+              "try{var q=location.search.match(/[?&]vaihtoehto=(\\d)/);if(q)sessionStorage.setItem('vaihtoehto',q[1]);if(sessionStorage.getItem('vaihtoehto')==='2')document.documentElement.classList.add('v2')}catch(e){}",
+          }}
+        />
         <a className="skip-link" href="#sisalto">Siirry sisältöön</a>
         <Header />
         <main id="sisalto">{children}</main>
