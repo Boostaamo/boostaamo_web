@@ -11,7 +11,7 @@ updated: 2026-11-09
     <p class="lead">Maksuttomat webinaarit käsittelevät kukin yhtä kasvukoneiston osaa. Jokaisessa on 30 minuuttia asiaa ja 15 minuuttia aikaa kysymyksille.</p>
     <div class="cta"><a class="btn" href="#to-26-11">Ilmoittaudu 26.11.</a><a class="btn o" href="#to-3-12">Ilmoittaudu 3.12.</a></div>
   </div>
-</section>
+</section><div class="hband"><img src="/kuvat/hero-kasvuarkkitehti-mv-2048.webp" srcset="/kuvat/hero-kasvuarkkitehti-mv-1024.webp 1024w, /kuvat/hero-kasvuarkkitehti-mv-2048.webp 2048w" sizes="(max-width:1400px) 100vw, 1400px" width="2048" height="1366" fetchpriority="high" alt="Hannu Savela puhuu kuulijoille, mustavalkoinen kuva"><div class="bar"></div></div>
 <section style="padding:24px 0 72px" id="ilmoittautuminen">
   <div class="wrap">
     <div class="mono" style="color:#5E5959;margin-bottom:14px">Valitse webinaari ja ilmoittaudu</div>

@@ -11,7 +11,7 @@ updated: 2026-11-09
     <p class="lead">Kun kasvu hidastuu, syytä on vaikea nähdä keskeltä arkea. Kasvu muodostuu kokonaisuudesta, ja katsastus näyttää sen sinulle yhdessä vartissa. Tarkoitettu omistajalle tai toimitusjohtajalle.</p>
     <a class="btn" href="#">Aloita katsastus</a>
   </div>
-</section>
+</section><div class="hband"><img src="/kuvat/hero-muistiinpanot-2048.webp" srcset="/kuvat/hero-muistiinpanot-1024.webp 1024w, /kuvat/hero-muistiinpanot-2048.webp 2048w" sizes="(max-width:1400px) 100vw, 1400px" width="2048" height="1366" fetchpriority="high" alt="Nuori mies tekee muistiinpanoja keskustelun aikana"><div class="bar"></div></div>
 <section>
   <div class="wrap">
     <div class="mono" style="color:#5E5959;margin-bottom:10px">Miten katsastus etenee</div>

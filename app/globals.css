@@ -142,3 +142,23 @@ section.dark .wrap{background:#0C0C0D;border-radius:32px;padding:56px 40px;max-w
 .button{display:inline-block;font:inherit;font-family:var(--font-otsikko);font-weight:800;cursor:pointer;background:#FFB000;color:#0C0C0D;border:0;border-radius:999px;padding:12px 24px;min-height:48px}
 .button.secondary{background:transparent;box-shadow:inset 0 0 0 2px #0C0C0D}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+/* B: Isot herokuvat (versio B, 11.11.2026). Kuvat: Konserni/04 Markkinointi ja brändi/Kuvat */
+.hero.bleed{position:relative;min-height:min(88vh,860px);display:flex;align-items:flex-end;padding:160px 0 88px;color:#fff;overflow:hidden;background:#0C0C0D}
+.hero.bleed img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center}
+.hero.bleed:before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(12,12,13,.86) 0%,rgba(12,12,13,.6) 42%,rgba(12,12,13,.08) 78%),linear-gradient(0deg,rgba(12,12,13,.45) 0%,rgba(12,12,13,0) 45%)}
+.hero.bleed:after{content:"";position:absolute;left:0;right:0;bottom:0;height:10px;background:#FFB000;z-index:2}
+.hero.bleed .wrap{position:relative;z-index:2;width:100%}
+.hero.bleed .hcopy{max-width:640px}
+.hero.bleed .mono{color:#FFB000}
+.hero.bleed p.lead{color:#fff}
+.hero.bleed .btn.o{box-shadow:inset 0 0 0 2px #fff;color:#fff}
+.hero.bleed .btn.o:hover{background:#fff;color:#0C0C0D}
+.hero.bleed a:focus-visible,.hero.bleed .btn:focus-visible{outline-color:#fff}
+@media (max-width:760px){
+  .hero.bleed{min-height:auto;padding:220px 0 64px}
+  .hero.bleed:before{background:linear-gradient(0deg,rgba(12,12,13,.9) 0%,rgba(12,12,13,.7) 55%,rgba(12,12,13,.25) 100%)}
+}
+.hband{position:relative;max-width:1400px;margin:0 auto 24px;padding:0 24px}
+.hband img{display:block;width:100%;height:clamp(260px,46vw,620px);object-fit:cover;object-position:center 30%;border-radius:28px}
+.hband .bar{position:absolute;left:52px;right:52px;bottom:-6px;height:8px;border-radius:8px;background:#FFB000}
