@@ -39,3 +39,17 @@ Kokonaisohje: boostaamo-core/verkkosivut/claude-code-ohje.md (Claude Code -proje
 - Kirjautuminen, maksut, taustajärjestelmät ja laajat integraatiot: pysäytä ja ehdota Bistekiä.
 - Julkaisun jälkeen kerro, mitä rekisteriin (sivustot.md) pitää päivittää: repo, Vercel-projekti, julkaisupäivä, domain.
 - Repo on julkinen (päätös julkisuudesta auki): tähän repoon ei koskaan sisäisiä tietoja, kuten DNS-omistajia, vastuuhenkilöitä tai hinnoittelua.
+
+## Tilatieto Hannulle (muutosrivi)
+
+Kokeilu (Hannu 10.11.2026, laajennettu Claude Code -projekteihin 11.11.2026). Malli: taito `boostaamo-80-tilannekatsaus` (repo boostaamo-core).
+
+- Kun syntyy päätös, valmis tuotos, PR tai Hannulle vietävä tehtävä, lisää heti kysymättä yksi rivi tiedoston `Konserni/09 Johtoryhmä/Tilanne - Verkkosivut.md` kohtaan **Muutokset edellisestä**, uusin ylimmäksi:
+  `- PP.KK.VVVV: Boostaamo: <mitä tapahtui yhdellä lauseella> (<PR, haara tai tiedosto>)`
+  Päivitä myös tiedoston ensimmäisen rivin päivämäärä. Kerro Hannulle yhdellä lauseella, mitä kirjasit.
+- Lupa koskee vain tätä riviä. Muihin Tilanne-tiedoston kohtiin ja muihin 09 Johtoryhmä -kansion tiedostoihin ei kosketa. Kun Hannu sanoo "lopeta", päivitä lisäksi Yhteenveto ja Projektit boostaamo-80:n rakenteella, näytä muutos ja pyydä vahvistus ennen tallennusta.
+- Vain tapahtunut asia, ei arvioita. Ei hintoja, sopimusehtoja, henkilötietoja, asiakasdataa eikä salaisuuksia.
+- Polku: Macilla `~/Library/CloudStorage/GoogleDrive-<tili>/Oma Drive/Boostaamo/Konserni/09 Johtoryhmä/`. Repo on julkinen, joten Drive-tiliä ei kirjoiteta tähän; käytä kansioyhteyden antamaa polkua. Sama tiedosto on kaikilla sivustoilla, joten aloita rivi sivuston nimellä.
+- Pilvi-istunnossa käytä kytkettyä 09 Johtoryhmä -kansiota (pyydä kansioyhteys kerran). Jos pääsyä ei ole, kirjoita rivi vastauksen loppuun otsikolla "Muutosrivi" ja kerro, ettei sitä tallennettu.
+- Jos tiedostoa ei ole, älä luo sitä itse, vaan kerro Hannulle.
+- Tilanne-tiedosto on Drivessä, ei koskaan tässä repossa. Koordinaattori nostaa rivit johtoryhmän aamukatsaukseen.
