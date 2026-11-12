@@ -17,7 +17,7 @@ updated: 2026-11-09
     <div class="mono" style="color:#5E5959;margin-bottom:14px">Valitse webinaari ja ilmoittaudu</div>
     <article class="wcardL" id="to-26-11">
       <div class="winfo">
-        <div class="dbadge"><span class="dd">26.11.</span><span class="mono">torstai · klo &lt;täydennä&gt;</span></div>
+        <div class="dbadge"><span class="dd">26.11.</span><span class="mono">torstai · klo 8.30–9.15</span></div>
         <div class="mono" style="color:#8A5A00;margin-top:14px">Webinaari 1 · Google Meet</div>
         <h2 style="margin:10px 0 14px">Onko tuotannon kymppisi jäänyt yksin?</h2>
         <p>Tuotannon paras tekijä nostetaan usein työnjohtajaksi, ja sitten hän jää yksin. Huomaat sen siitä, että päätökset palaavat sinulle. Webinaarissa käydään läpi, mitä hyvä tuotannon esihenkilötyö on ja miten GFC:n kevään 2027 esihenkilövalmennus toimii.</p>
@@ -30,7 +30,7 @@ updated: 2026-11-09
     </article>
     <article class="wcardL dk" id="to-3-12">
       <div class="winfo">
-        <div class="dbadge"><span class="dd">3.12.</span><span class="mono">torstai · klo &lt;täydennä&gt;</span></div>
+        <div class="dbadge"><span class="dd">3.12.</span><span class="mono">torstai · klo 8.30–9.15</span></div>
         <div class="mono" style="color:#FFB000;margin-top:14px">Webinaari 2 · Google Meet</div>
         <h2 style="margin:10px 0 14px">Mitä tekoäly voi tehdä yrityksellesi ja mitä se ei korjaa?</h2>
         <p>Asiantuntijat: Hannu Savela ja Mari Jauhola. Webinaarissa käydään läpi:</p>
