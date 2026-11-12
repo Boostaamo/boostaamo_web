@@ -37,10 +37,11 @@ export default function Footer() {
                   ? <span className="todo" style={{ color: "#0C0C0D" }}>&lt;täydennä: julkinen sähköposti&gt;</span>
                   : <a href={`mailto:${email}`}>{email}</a>}
               </li>
+              {site.contactPhone ? <li><a href={`tel:${site.contactPhone.replace(/\s/g, "")}`}>{site.contactPhone}</a></li> : null}
             </ul>
           </div>
         </div>
-        <p className="small" style={{ marginTop: 32 }}>Tulossa: HR Impact. Rekisterinpitäjä: {site.legalEntity}.</p>
+        <p className="small" style={{ marginTop: 32 }}>Rekisterinpitäjä: {site.legalEntity}.</p>
       </div>
     </footer>
   );
