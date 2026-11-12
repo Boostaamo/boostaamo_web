@@ -2,7 +2,8 @@
   "name": "Boostaamo",
   "tagline": "Yritysten kasvuyhteisö",
   "locale": "fi_FI",
-  "contactEmail": "<täydennä: julkinen sähköposti>",
+  "contactEmail": "hannu@boostaamo.fi",
+  "contactPhone": "040 1251 119",
   "nav": [
     { "label": "Kasvukoneisto", "href": "/kasvukoneisto" },
     { "label": "Palvelut", "href": "/palvelut" },

@@ -9,13 +9,13 @@ updated: 2026-11-09
 <div class="mono" style="color:#5E5959;margin-bottom:16px">Tietosuoja</div>
 <h1>Tietosuojaseloste</h1>
 <p class="lead"></p>
-</div></section><section style="padding:48px 0;padding-top:0"><div class="wrap"><div class="legalp"><p><b>Rekisterinpitäjä:</b> Kriha Invest Oy, <span class="todo">&lt;täydennä: y-tunnus, osoite, tietosuojayhteyshenkilö&gt;</span></p>
+</div></section><section style="padding:48px 0;padding-top:0"><div class="wrap"><div class="legalp"><p><b>Rekisterinpitäjä:</b> Kriha Invest Oy (y-tunnus 2644804-9), <span class="todo">&lt;täydennä: osoite&gt;</span>. Tietosuoja-asioiden yhteyshenkilö: Hannu Savela, <a href="mailto:hannu@boostaamo.fi">hannu@boostaamo.fi</a>.</p>
 <h2>Mitä tietoja keräämme</h2><p>Lomakkeilla annetut tiedot: nimi, yritys, rooli, sähköposti, puhelin ja viestin sisältö. Kasvukoneiston katsastuksen vastaukset.</p>
 <h2>Mihin tietoja käytetään</h2><p>Yhteydenottoihin, webinaarikutsuihin, katsastuksen tulokseen ja purkuun sekä uutiskirjeeseen, jos olet tilannut sen.</p>
 <h2>Käsittelyn peruste</h2><p>Oikeutettu etu yhteydenottopyyntöjen käsittelyssä ja suostumus uutiskirjeen ja analytiikan osalta. <span class="todo">&lt;täydennä: juridinen tarkistus&gt;</span></p>
-<h2>Säilytys ja vastaanottajat</h2><p>Tiedot tallennetaan Google Workspaceen. Boostaamon yhtiöt voivat käsitellä tietoja, jos pyydät niiden palvelua. Säilytysaika: <span class="todo">&lt;täydennä: &gt;</span>.</p>
+<h2>Säilytys ja vastaanottajat</h2><p>Tiedot tallennetaan Google Workspaceen. Boostaamon yhtiöt voivat käsitellä tietoja, jos pyydät niiden palvelua. Yhteydenottojen ja muiden liidien tiedot säilytetään 24 kuukautta.</p>
 <h2>Evästeet ja analytiikka</h2><p>Käytämme Google Analytics 4:ää vain suostumuksellasi.</p>
-<h2>Oikeutesi</h2><p>Voit pyytää tietojesi tarkastamista, korjaamista tai poistamista ja perua suostumuksesi: <span class="todo">&lt;täydennä: yhteysosoite&gt;</span>.</p></div></div></section><section id="yhteys" style="padding-top:24px">
+<h2>Oikeutesi</h2><p>Voit pyytää tietojesi tarkastamista, korjaamista tai poistamista ja perua suostumuksesi lähettämällä viestin osoitteeseen <a href="mailto:hannu@boostaamo.fi">hannu@boostaamo.fi</a>.</p></div></div></section><section id="yhteys" style="padding-top:24px">
   <div class="wrap"><div class="panel" style="margin-top:0">
     <h2>Haluatko jutella ensin?</h2>
     <p style="margin-top:12px">Varaa maksuton keskustelu kasvuarkkitehdin kanssa, niin katsotaan yhdessä juuri sinun tilannettasi.</p>
