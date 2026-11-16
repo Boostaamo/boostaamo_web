@@ -4,20 +4,17 @@ description: "Boostaamo auttaa omistajayrittäjää löytämään kasvun pullonk
 updated: 2026-11-09
 ---
 
-<section class="hero">
-  <div class="wrap" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:48px;align-items:center">
-    <div>
-      <div class="mono" style="color:#5E5959;margin-bottom:18px">Yritysten kasvuyhteisö</div>
+<section class="hero bleed">
+  <img class="bg" src="/kuvat/hero-tiimi-ylhaalta-2048.webp" srcset="/kuvat/hero-tiimi-ylhaalta-1024.webp 1024w, /kuvat/hero-tiimi-ylhaalta-2048.webp 2048w" sizes="100vw" width="2048" height="1366" fetchpriority="high" alt="Kolme ihmistä työskentelee pöydän ääressä kannettavan ja muistiinpanojen kanssa, kuvattu ylhäältä">
+  <div class="wrap">
+    <div class="hcopy">
+      <div class="mono" style="margin-bottom:18px">Yritysten kasvuyhteisö</div>
       <h1>Oletko itse yrityksesi kasvun pullonkaula?</h1>
       <p class="lead">Moni omistajayrittäjä huomaa jossain vaiheessa, että kasvu hidastuu ja kaikki kulkee hänen pöytänsä kautta. Syy on harvoin yksi asia. Kasvu muodostuu kokonaisuudesta.</p>
       <div class="cta">
         <a class="btn" href="/webinaarit">Ilmoittaudu webinaariin</a>
         <a data-track="katsastus_aloitus" class="btn o" href="/kasvukoneiston-katsastus">Tee Kasvukoneiston katsastus</a>
       </div>
-    </div>
-    <div class="himg">
-      <img src="/kuvat/hero-4x5.webp" width="1200" height="1500" alt="Neljä ihmistä työskentelee puupöydän ääressä kannettavan ja muistiinpanojen kanssa, kuvattu ylhäältä" style="display:block;width:100%;height:auto">
-      <div class="bar"></div>
     </div>
   </div>
 </section>
