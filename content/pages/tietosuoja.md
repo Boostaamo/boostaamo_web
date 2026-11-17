@@ -1,7 +1,7 @@
 ---
 title: "Tietosuojaseloste"
 description: "Miten Boostaamo käsittelee lomakkeilla, Kasvukoneiston katsastuksessa ja analytiikkaevästeillä kerättäviä tietoja."
-updated: 2026-11-16
+updated: 2026-11-17
 ---
 
 <div class="pg">
@@ -10,8 +10,8 @@ updated: 2026-11-16
 <h1>Tietosuojaseloste</h1>
 <p class="lead"></p>
 </div></section><section style="padding:48px 0;padding-top:0"><div class="wrap"><div class="legalp">
-<p>Päivitetty: 16.11.2026</p>
-<h2>Rekisterinpitäjä</h2><p>Kriha Invest Oy (Boostaamo), Y-tunnus 2644804-9, <span class="todo">&lt;täydennä: osoite tai kotipaikka&gt;</span>.</p>
+<p>Päivitetty: 17.11.2026</p>
+<h2>Rekisterinpitäjä</h2><p>Kriha Invest Oy (Boostaamo), Y-tunnus 2644804-9, kotipaikka Kempele. Postiosoite: Kaaritie 12 a 4, 42220 Kaipola.</p>
 <p>Yhteyshenkilö tietosuoja-asioissa: Hannu Savela, <a href="mailto:hannu@boostaamo.fi">hannu@boostaamo.fi</a>.</p>
 <h2>Mitä tietoja keräämme ja miksi</h2><ul>
 <li><b>Yhteydenottolomake:</b> nimi, sähköposti, yritys, rooli, puhelinnumero ja viesti sekä tieto siitä, miltä sivulta ja mistä markkinointikanavasta (UTM-tunnisteet) lomake lähetettiin. Käytämme tietoja yhteydenottoosi vastaamiseen ja mahdollisen yhteistyön valmisteluun.</li>
@@ -29,7 +29,7 @@ updated: 2026-11-16
 <li>Google (Google Workspace sekä Google Analytics)</li>
 </ul>
 <p>Palveluntarjoajat voivat käsitellä tietoja myös EU:n ja ETA:n ulkopuolella, erityisesti Yhdysvalloissa. Siirrot perustuvat EU:n ja Yhdysvaltojen väliseen tietosuojakehykseen (EU-U.S. Data Privacy Framework) tai Euroopan komission hyväksymiin vakiosopimuslausekkeisiin.</p>
-<h2>Säilytysaika</h2><p>Säilytämme lomakkeilla annetut tiedot enintään 24 kuukautta viimeisestä yhteydenotosta, ellei niistä synny asiakassuhdetta. Asiakassuhteen tietoja säilytetään sopimuksen ja lain edellyttämän ajan. Google Analyticsin tiedot säilyvät <span class="todo">&lt;täydennä: 2 tai 14&gt;</span> kuukautta.</p>
+<h2>Säilytysaika</h2><p>Säilytämme lomakkeilla annetut tiedot enintään 24 kuukautta viimeisestä yhteydenotosta, ellei niistä synny asiakassuhdetta. Asiakassuhteen tietoja säilytetään sopimuksen ja lain edellyttämän ajan. Google Analyticsin tiedot säilyvät 14 kuukautta.</p>
 <h2>Oikeutesi</h2><p>Sinulla on oikeus tarkastaa, oikaista ja poistaa tietosi, rajoittaa ja vastustaa niiden käsittelyä sekä siirtää tiedot järjestelmästä toiseen. Voit myös peruuttaa suostumuksesi. Ota yhteyttä: <a href="mailto:hannu@boostaamo.fi">hannu@boostaamo.fi</a>.</p>
 <p>Jos katsot, että tietojesi käsittely rikkoo tietosuojalainsäädäntöä, voit tehdä valituksen tietosuojavaltuutetun toimistolle (<a href="https://tietosuoja.fi">tietosuoja.fi</a>).</p>
 <h2>Evästeet</h2><p>Käytämme analytiikkaevästeitä vain, jos hyväksyt ne. Voit muuttaa valintaasi milloin tahansa sivun alalaidan kohdasta "Evästeasetukset".</p>
