@@ -185,3 +185,42 @@ section.dark .wrap{border-radius:11px}
 .foot{border-radius:0}
 .todo{background:#FCF0D9;color:#7A4A00;border-radius:999px;padding:1px 10px;font-size:.9em}
 .consent{border-radius:11px}
+
+/* Elävät elementit (ehdotukset 26.11.2026): components/elementit */
+.elementti{margin-top:32px}
+.el-pk{border:1px solid #E2DDDD;border-radius:11px;padding:20px 20px 24px;background:#fff}
+.el-pk-ohj{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 20px;border-top:1px solid #E2DDDD;padding-top:16px;margin-top:8px}
+.el-pk-ohj p{margin:0;font-size:16px}
+.el-pk-napit{display:flex;flex-wrap:wrap;gap:10px}
+.el-polku{border:1px solid #E2DDDD;border-radius:11px;padding:24px;background:#fff}
+.el-polku svg{display:block;width:100%;height:auto}
+.el-polku-viiva{transition:stroke-dashoffset 2.4s cubic-bezier(.6,.05,.3,1)}
+.el-polku-ala{opacity:0;transition:opacity 1.2s ease 1.6s}
+.el-polku.on .el-polku-ala{opacity:1}
+.el-polku-vaihe{opacity:0;transition:opacity .5s ease}
+.el-polku.on .el-polku-vaihe{opacity:1}
+.el-polku-lista{list-style:none;margin:16px 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:1px;background:#E2DDDD;border:1px solid #E2DDDD;border-radius:10px;overflow:hidden}
+.el-polku-lista li{background:#fff;padding:16px 18px;display:flex;flex-direction:column;gap:4px;opacity:0;transform:translateY(8px);transition:opacity .5s ease,transform .5s ease}
+.el-polku.on .el-polku-lista li{opacity:1;transform:none}
+.el-polku-lista .mono{color:#5E5959}
+.el-polku-lista span:last-child{color:#5E5959;font-size:15px}
+.el-kukka{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:28px;align-items:center;border:1px solid #E2DDDD;border-radius:11px;padding:24px;background:#fff}
+.el-kukka svg{display:block;width:100%;max-width:440px;height:auto;margin:0 auto}
+.el-kukka-osa{fill:#0C0C0D;cursor:pointer;transition:fill .2s}
+.el-kukka-osa:hover{fill:#3A3636}
+.el-kukka-osa.heikoin{fill:#FFB000;animation:el-syke 1.8s ease-in-out infinite}
+.el-kukka-kasvu{fill:#FFB000}
+.el-kukka-kasvu.valmis{animation:el-syke 2.4s ease-in-out infinite}
+.el-kukka-teksti{font-family:var(--font-tunniste);font-size:12px;letter-spacing:.14em;fill:#0C0C0D}
+.el-kukka-osat{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.el-kukka-nappi{font:inherit;text-align:left;background:#fff;border:1px solid #E2DDDD;border-radius:10px;padding:10px 12px;cursor:pointer;display:flex;flex-direction:column;gap:2px;color:#0C0C0D}
+.el-kukka-nappi:hover{border-color:#0C0C0D}
+.el-kukka-nappi.heikoin{border-color:#FFB000;background:#FFF8E6}
+.el-kukka-nappi .mono{font-size:11px;color:#5E5959}
+.el-kukka-nappi span:nth-child(2){font-weight:600;font-size:15px}
+.el-kukka-palkki{display:block;height:4px;background:#EFEBEB;border-radius:999px;margin-top:6px;overflow:hidden}
+.el-kukka-palkki span{display:block;height:100%;background:#0C0C0D;border-radius:999px}
+.el-kukka-nappi.heikoin .el-kukka-palkki span{background:#FFB000}
+.el-kukka-ohje{grid-column:1/-1;margin:8px 0 4px;font-size:16px}
+.el-kukka-osat .button{grid-column:1/-1;justify-self:start}
+@keyframes el-syke{0%,100%{opacity:1}50%{opacity:.62}}
