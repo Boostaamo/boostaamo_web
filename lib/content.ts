@@ -49,6 +49,16 @@ export function getPage(slug: string[]): Page | null {
   if (!meta.title) {
     throw new Error(`Sivulta ${path.relative(process.cwd(), file)} puuttuu title-kenttä.`);
   }
-  const html = marked.parse(content, { async: false }) as string;
+  const html = ulkoisetLinkitUuteenValilehteen(marked.parse(content, { async: false }) as string);
   return { slug, meta, html };
+}
+
+/** Ulos johtavat linkit (http/https) avautuvat aina uuteen välilehteen. */
+export function ulkoisetLinkitUuteenValilehteen(html: string): string {
+  return html.replace(/<a\b([^>]*?)>/gi, (tag, attrs: string) => {
+    if (!/\shref\s*=\s*["']https?:\/\//i.test(attrs)) return tag;
+    let a = attrs.replace(/\s(target|rel)\s*=\s*("[^"]*"|'[^']*')/gi, "");
+    a += ' target="_blank" rel="noopener noreferrer"';
+    return `<a${a}>`;
+  });
 }
