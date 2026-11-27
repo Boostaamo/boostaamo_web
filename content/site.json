@@ -11,7 +11,7 @@
     { "label": "Meistä", "href": "/meista" },
     { "label": "Ota yhteyttä", "href": "/yhteys" }
   ],
-  "cta": { "label": "Ilmoittaudu webinaariin", "href": "/webinaarit" },
+  "cta": { "label": "Tee Kasvukoneiston katsastus", "href": "/kasvukoneiston-katsastus" },
   "companies": [
     { "label": "Growth Flame Company", "href": "/yhtiot/gfc", "id": "gfc" },
     { "label": "Dimma", "href": "/yhtiot/dimma", "id": "dimma" },

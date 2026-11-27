@@ -12,8 +12,8 @@ updated: 2026-11-09
       <h1>Oletko itse yrityksesi kasvun pullonkaula?</h1>
       <p class="lead">Moni omistajayrittäjä huomaa jossain vaiheessa, että kasvu hidastuu ja kaikki kulkee hänen pöytänsä kautta. Syy on harvoin yksi asia. Kasvu muodostuu kokonaisuudesta.</p>
       <div class="cta">
-        <a class="btn" href="/webinaarit">Ilmoittaudu webinaariin</a>
-        <a data-track="katsastus_aloitus" class="btn o" href="/kasvukoneiston-katsastus">Tee Kasvukoneiston katsastus</a>
+        <a data-track="katsastus_aloitus" class="btn" href="/kasvukoneiston-katsastus">Tee Kasvukoneiston katsastus</a>
+        <a class="btn o" href="/webinaarit">Ilmoittaudu webinaariin</a>
       </div>
     </div>
   </div>
@@ -31,7 +31,7 @@ updated: 2026-11-09
       <div class="part"><div class="mono">Ihmiset</div><h3>Avainhenkilöt</h3><p>Jos avainpaikka on auki, muu koneisto ei vedä.</p></div>
     </div>
     <!--elementti:pullonkaula-->
-    <p style="margin-top:28px">Jokaisesta osasta vastaa Boostaamon asiantuntijayhtiö.</p>
+    <p style="margin-top:28px">Viidestä osasta vastaa Boostaamon asiantuntijayhtiö.</p>
     <a class="btn o" href="/kasvukoneisto">Lue lisää kasvukoneistosta</a>
   </div>
 </section>
@@ -54,8 +54,7 @@ updated: 2026-11-09
     <h2 style="margin-top:10px">Mikä jarruttaa kasvuasi? Ota paikkasi webinaarissa</h2>
     <p style="margin-top:14px">Maksuttomissa 45 minuutin webinaareissa käsitellään yksi kasvukoneiston osa kerrallaan, ja keskustelulle jää aikaa.</p>
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:20px;margin:28px 0">
-      <div class="wcard" data-asti="2026-11-26" data-ryhma="etu-web"><div class="mono" style="color:#FFB000">to 26.11.2026</div><h3 style="margin-top:8px">Onko tuotannon kymppisi jäänyt yksin?</h3></div>
-      <div class="wcard" data-asti="2026-12-03" data-ryhma="etu-web"><div class="mono" style="color:#FFB000">to 3.12.2026</div><h3 style="margin-top:8px">Mitä tekoäly voi tehdä yrityksellesi ja mitä se ei korjaa?</h3></div>
+      <div class="wcard" data-asti="2027-01-07" data-ryhma="etu-web"><div class="mono" style="color:#FFB000">to 7.1.2027 klo 8.30</div><h3 style="margin-top:8px">Onko tuotannon kymppisi jäänyt yksin?</h3></div>
     </div>
     <a class="btn" href="/webinaarit">Katso webinaarit ja ilmoittaudu</a>
   </div>
