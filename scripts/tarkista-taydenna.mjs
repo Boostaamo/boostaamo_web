@@ -1,21 +1,23 @@
-// Listaa kaikki <täydennä>-kohdat sisällöstä. Julkaisun esto: aja `npm run tarkista:taydenna -- --strict`.
-import fs from "node:fs";
-import path from "node:path";
+// Listaa sisällön keskeneräiset <täydennä>-merkinnät. Aja ennen tuotantojulkaisua: npm run tarkista:taydenna
+import { readdirSync, readFileSync, statSync } from "node:fs";
+import { join } from "node:path";
 
-const root = path.join(process.cwd(), "content");
-const hits = [];
-(function walk(dir) {
-  for (const e of fs.readdirSync(dir, { withFileTypes: true })) {
-    const p = path.join(dir, e.name);
-    if (e.isDirectory()) walk(p);
-    else if (/\.(md|json)$/.test(e.name)) {
-      fs.readFileSync(p, "utf8").split("\n").forEach((line, i) => {
-        const m = line.match(/(?:<|&lt;)täydennä[^>&]*(?:>|&gt;)/g);
-        if (m) m.forEach((t) => hits.push(`${path.relative(process.cwd(), p)}:${i + 1}  ${t}`));
-      });
+const juuri = "content";
+const loydot = [];
+const kay = (d) => {
+  for (const n of readdirSync(d)) {
+    const p = join(d, n);
+    if (statSync(p).isDirectory()) kay(p);
+    else if (/\.(md|json)$/.test(n)) {
+      const s = readFileSync(p, "utf8");
+      for (const m of s.matchAll(/(?:<|&lt;)täydennä:?([^<&]*)(?:>|&gt;)/g)) loydot.push(`${p}: ${m[1].trim() || "(tyhjä)"}`);
     }
   }
-})(root);
-console.log(hits.length ? hits.join("\n") : "Ei <täydennä>-kohtia.");
-console.log(`\nYhteensä ${hits.length} kohtaa.`);
-if (hits.length && process.argv.includes("--strict")) process.exit(1);
+};
+kay(juuri);
+if (loydot.length) {
+  console.log(`Keskeneräisiä merkintöjä ${loydot.length}:`);
+  for (const l of loydot) console.log(`- ${l}`);
+  process.exit(1);
+}
+console.log("Ei <täydennä>-merkintöjä.");

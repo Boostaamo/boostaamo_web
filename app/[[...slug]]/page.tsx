@@ -4,6 +4,7 @@ import { getPage, listSlugs } from "@/lib/content";
 import { site } from "@/lib/site";
 import type { FormKind } from "@/components/Form";
 import FormPortals, { type FormSlot } from "@/components/FormPortals";
+import Elementit, { type ElementtiSlot } from "@/components/Elementit";
 
 export const dynamicParams = false;
 
@@ -29,14 +30,19 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 // Sisältö on HTML-lohkoja. Lomakkeet merkitään kommentilla <!--form:tyyppi|arvo-->,
 // ne korvataan paikkamerkillä ja renderöidään Reactilla (FormPortals).
-function prepare(html: string): { html: string; slots: FormSlot[] } {
+function prepare(html: string): { html: string; slots: FormSlot[]; elementit: ElementtiSlot[] } {
   const slots: FormSlot[] = [];
-  const out = html.replace(/<!--form:([a-z]+)(?:\|([^>]*?))?-->/g, (_m, kind: string, arg?: string) => {
+  const elementit: ElementtiSlot[] = [];
+  const out = html.replace(/<!--elementti:([a-z]+)(?:\|([a-z-]+))?-->/g, (_m, nimi: string, arg?: string) => {
+    const id = `elementti-${elementit.length}`;
+    elementit.push({ id, nimi, arg });
+    return `<div id="${id}" class="elementti"></div>`;
+  }).replace(/<!--form:([a-z]+)(?:\|([^>]*?))?-->/g, (_m, kind: string, arg?: string) => {
     const id = `lomake-${slots.length}`;
     slots.push({ id, kind: kind as FormKind, arg });
     return `<div id="${id}"></div>`;
   });
-  return { html: out, slots };
+  return { html: out, slots, elementit };
 }
 
 export default async function ContentPage({ params }: Props) {
@@ -46,7 +52,7 @@ export default async function ContentPage({ params }: Props) {
   const path = slug.length ? `/${slug.join("/")}` : "/";
   const source = slug.length ? slug.join("/") : "etusivu";
 
-  const { html, slots } = prepare(page.html);
+  const { html, slots, elementit } = prepare(page.html);
 
   const jsonLd: object[] = [
     {
@@ -76,6 +82,7 @@ export default async function ContentPage({ params }: Props) {
     <>
       <div style={{ display: "contents" }} dangerouslySetInnerHTML={{ __html: html }} />
       <FormPortals slots={slots} source={source} />
+      <Elementit slots={elementit} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
     </>
   );

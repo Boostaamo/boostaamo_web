@@ -1,7 +1,7 @@
 ---
 title: "Tietosuojaseloste"
 description: "Miten Boostaamo käsittelee lomakkeilla, Kasvukoneiston katsastuksessa ja analytiikkaevästeillä kerättäviä tietoja."
-updated: 2026-11-17
+updated: 2026-11-27
 ---
 
 <div class="pg">
@@ -10,9 +10,9 @@ updated: 2026-11-17
 <h1>Tietosuojaseloste</h1>
 <p class="lead"></p>
 </div></section><section style="padding:48px 0;padding-top:0"><div class="wrap"><div class="legalp">
-<p>Päivitetty: 17.11.2026</p>
+<p>Päivitetty: 27.11.2026</p>
 <h2>Rekisterinpitäjä</h2><p>Kriha Invest Oy (Boostaamo), Y-tunnus 2644804-9, kotipaikka Kempele. Postiosoite: Kaaritie 12 a 4, 42220 Kaipola.</p>
-<p>Yhteyshenkilö tietosuoja-asioissa: Hannu Savela, <a href="mailto:hannu@boostaamo.fi">hannu@boostaamo.fi</a>.</p>
+<p><strong>Kvartaalikirje:</strong> sähköpostiosoitteesi, jos tilaat kirjeen webinaari-ilmoittautumisen yhteydessä. Lähetämme kirjeen enintään neljä kertaa vuodessa. Voit perua tilauksen milloin tahansa kirjeen linkistä tai ottamalla yhteyttä.</p><p>Yhteyshenkilö tietosuoja-asioissa: Hannu Savela, <a href="mailto:hannu@boostaamo.fi">hannu@boostaamo.fi</a>.</p>
 <h2>Mitä tietoja keräämme ja miksi</h2><ul>
 <li><b>Yhteydenottolomake:</b> nimi, sähköposti, yritys, rooli, puhelinnumero ja viesti sekä tieto siitä, miltä sivulta ja mistä markkinointikanavasta (UTM-tunnisteet) lomake lähetettiin. Käytämme tietoja yhteydenottoosi vastaamiseen ja mahdollisen yhteistyön valmisteluun.</li>
 <li><b>Kasvukoneiston katsastus:</b> yhteystietosi ja katsastuksen vastaukset. Käytämme niitä katsastuksen tuloksen laatimiseen ja sen purkuun kanssasi.</li>
@@ -21,12 +21,12 @@ updated: 2026-11-17
 </ul>
 <h2>Käsittelyn oikeusperuste</h2><ul>
 <li>Lomakkeet: oikeutettu etu. Kun otat meihin yhteyttä, ilmoittaudut webinaariin tai teet katsastuksen, voimme perustellusti käsitellä tietojasi asiasi hoitamiseksi.</li>
-<li>Analytiikka: suostumuksesi. Voit peruuttaa sen milloin tahansa.</li>
+<li>Analytiikka ja kvartaalikirje: suostumuksesi. Voit peruuttaa sen milloin tahansa.</li>
 </ul>
-<h2>Mihin tiedot tallennetaan ja kuka niitä käsittelee</h2><p>Lomakkeilla lähetetyt tiedot tallennetaan Google Workspaceen. Niitä käsittelevät Boostaamon yhteydenottoja hoitavat henkilöt. Kun pyydät tiettyä palvelua, välitämme tietosi sille Boostaamo-yhteisön yhtiölle, joka palvelun tuottaa. Emme myy tai luovuta tietoja markkinointiin.</p>
+<h2>Mihin tiedot tallennetaan ja kuka niitä käsittelee</h2><p>Lomakkeilla lähetetyt tiedot tallennetaan Boostaamon liidirekisteriin (Supabase, palvelin EU:ssa) tai Google Workspaceen. Niitä käsittelevät Boostaamon yhteydenottoja hoitavat henkilöt. Kun pyydät tiettyä palvelua, välitämme tietosi sille Boostaamo-yhteisön yhtiölle, joka palvelun tuottaa. Emme myy tai luovuta tietoja markkinointiin.</p>
 <p>Käytämme seuraavia palveluntarjoajia, jotka käsittelevät tietoja puolestamme:</p><ul>
 <li>Vercel Inc. (sivuston ylläpito)</li>
-<li>Google (Google Workspace sekä Google Analytics)</li>
+<li>Google (Google Workspace sekä Google Analytics)</li><li>Supabase Inc. (liidirekisteri, palvelin EU:ssa)</li>
 </ul>
 <p>Palveluntarjoajat voivat käsitellä tietoja myös EU:n ja ETA:n ulkopuolella, erityisesti Yhdysvalloissa. Siirrot perustuvat EU:n ja Yhdysvaltojen väliseen tietosuojakehykseen (EU-U.S. Data Privacy Framework) tai Euroopan komission hyväksymiin vakiosopimuslausekkeisiin.</p>
 <h2>Säilytysaika</h2><p>Säilytämme lomakkeilla annetut tiedot enintään 24 kuukautta viimeisestä yhteydenotosta, ellei niistä synny asiakassuhdetta. Asiakassuhteen tietoja säilytetään sopimuksen ja lain edellyttämän ajan. Google Analyticsin tiedot säilyvät 14 kuukautta.</p>
