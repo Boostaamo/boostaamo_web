@@ -9,7 +9,6 @@ export default function Footer() {
     <footer className="foot" id="yhtiot-alatunniste">
       <div className="wrap">
         <div className="wm" style={{ color: "#EDE9E9" }}>BOOSTAAMO</div>
-        <div className="mono" style={{ marginTop: 8 }}><span className="dot" />A Boostaamo Company</div>
         <div className="fcols">
           <div>
             <div className="mono">Yhtiöt</div>
