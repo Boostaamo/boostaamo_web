@@ -3,18 +3,14 @@
 import React, { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 import Pullonkaula from "@/components/elementit/Pullonkaula";
-import Kasvupolku from "@/components/elementit/Kasvupolku";
-import Kasvukukka from "@/components/elementit/Kasvukukka";
 
-export type ElementtiSlot = { id: string; nimi: string };
+export type ElementtiSlot = { id: string; nimi: string; arg?: string };
 
-const ELEMENTIT: Partial<Record<string, () => React.ReactElement>> = {
-  pullonkaula: () => <Pullonkaula />,
-  kasvupolku: () => <Kasvupolku />,
-  kasvukukka: () => <Kasvukukka />,
+const ELEMENTIT: Partial<Record<string, (arg?: string) => React.ReactElement>> = {
+  pullonkaula: (arg) => <Pullonkaula yhtio={arg} />,
 };
 
-// Sisällön paikkamerkki <!--elementti:nimi--> korvataan elävällä elementillä (kuten lomakkeet).
+// Sisällön paikkamerkki <!--elementti:nimi--> tai <!--elementti:nimi|arvo--> korvataan elävällä elementillä (kuten lomakkeet).
 export default function Elementit({ slots }: { slots: ElementtiSlot[] }) {
   const [targets, setTargets] = useState<Record<string, Element>>({});
   useEffect(() => {
@@ -29,7 +25,7 @@ export default function Elementit({ slots }: { slots: ElementtiSlot[] }) {
     <>
       {slots.map((s) => {
         const tee = ELEMENTIT[s.nimi];
-        return tee && targets[s.id] ? createPortal(tee(), targets[s.id], s.id) : null;
+        return tee && targets[s.id] ? createPortal(tee(s.arg), targets[s.id], s.id) : null;
       })}
     </>
   );

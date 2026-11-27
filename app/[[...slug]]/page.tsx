@@ -33,9 +33,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 function prepare(html: string): { html: string; slots: FormSlot[]; elementit: ElementtiSlot[] } {
   const slots: FormSlot[] = [];
   const elementit: ElementtiSlot[] = [];
-  const out = html.replace(/<!--elementti:([a-z]+)-->/g, (_m, nimi: string) => {
+  const out = html.replace(/<!--elementti:([a-z]+)(?:\|([a-z-]+))?-->/g, (_m, nimi: string, arg?: string) => {
     const id = `elementti-${elementit.length}`;
-    elementit.push({ id, nimi });
+    elementit.push({ id, nimi, arg });
     return `<div id="${id}" class="elementti"></div>`;
   }).replace(/<!--form:([a-z]+)(?:\|([^>]*?))?-->/g, (_m, kind: string, arg?: string) => {
     const id = `lomake-${slots.length}`;

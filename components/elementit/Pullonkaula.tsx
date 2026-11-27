@@ -16,6 +16,21 @@ const VALI = 9; // hiukkasten vähimmäisväli (px)
 const NOPEUS = 120; // px/s
 const LAHDE = 3.2; // hiukkasta sekunnissa, kun kapasiteetti on 1
 
+// Yhtiösivuilla yhtiön oma osa korostetaan yhtiön värillä ja se on lähtötilanteen pullonkaula.
+const YHTIOT: Record<string, { osa: number; nimi: string; vari: string }> = {
+  gfc: { osa: 0, nimi: "Growth Flame Company", vari: "#182A50" },
+  dimma: { osa: 1, nimi: "Dimma", vari: "#07A99D" },
+  grofi: { osa: 2, nimi: "Grofi", vari: "#F84800" },
+  "ai-softarobotit": { osa: 3, nimi: "AI Softarobotit", vari: "#8DB80F" },
+  bistek: { osa: 4, nimi: "Bistek", vari: "#2563EB" },
+};
+
+function lahtotaso(osa: number | null): number[] {
+  const t = [...LAHTOTASO];
+  if (osa !== null) t[osa] = Math.min(...LAHTOTASO) - 0.06;
+  return t;
+}
+
 function pullonkaulaOf(kap: number[]): number {
   let i = 0;
   kap.forEach((k, j) => {
@@ -24,12 +39,15 @@ function pullonkaulaOf(kap: number[]): number {
   return i;
 }
 
-export default function Pullonkaula() {
+export default function Pullonkaula({ yhtio }: { yhtio?: string }) {
+  const oma = yhtio ? YHTIOT[yhtio] ?? null : null;
+  const alku = lahtotaso(oma ? oma.osa : null);
   const wrap = useRef<HTMLDivElement>(null);
   const canvas = useRef<HTMLCanvasElement>(null);
-  const kapRef = useRef<number[]>([...LAHTOTASO]);
-  const nakyvaRef = useRef<number[]>([...LAHTOTASO]); // animoitu aukko
-  const [kap, setKap] = useState<number[]>([...LAHTOTASO]);
+  const kapRef = useRef<number[]>(alku);
+  const nakyvaRef = useRef<number[]>([...alku]); // animoitu aukko
+  const [kap, setKap] = useState<number[]>([...alku]);
+  const omaRef = useRef(oma);
   const [hover, setHover] = useState<number | null>(null);
   const hoverRef = useRef<number | null>(null);
   const gateRects = useRef<{ x: number; y: number; w: number; h: number }[]>([]);
@@ -45,8 +63,9 @@ export default function Pullonkaula() {
   }, []);
 
   const alusta = useCallback(() => {
-    kapRef.current = [...LAHTOTASO];
-    setKap([...LAHTOTASO]);
+    const t = lahtotaso(omaRef.current ? omaRef.current.osa : null);
+    kapRef.current = t;
+    setKap([...t]);
   }, []);
 
   useEffect(() => {
@@ -76,7 +95,7 @@ export default function Pullonkaula() {
       const r = el.getBoundingClientRect();
       w = Math.max(280, Math.floor(r.width));
       pysty = w < 640;
-      h = pysty ? 560 : 250;
+      h = pysty ? 560 : 270;
       const dpr = Math.min(2, window.devicePixelRatio || 1);
       cv.width = w * dpr;
       cv.height = h * dpr;
@@ -166,7 +185,8 @@ export default function Pullonkaula() {
         const auki = 8 + (B - 8) * nak[i];
         const onPk = !kaikki && i === pkNyt;
         const hov = hoverRef.current === i;
-        ctx.fillStyle = onPk ? HEHKU : hov ? HARMAA : HIILI;
+        const omaOsa = omaRef.current && omaRef.current.osa === i ? omaRef.current : null;
+        ctx.fillStyle = omaOsa ? omaOsa.vari : onPk ? HEHKU : hov ? HARMAA : HIILI;
         const paksu = 10;
         const [p1x, p1y] = piste(g - paksu / 2, -B);
         const [p2x, p2y] = piste(g + paksu / 2, -auki);
@@ -178,23 +198,36 @@ export default function Pullonkaula() {
         rects.push(pysty ? { x: cx - B - 10, y: cy - 24, w: 2 * B + 20 + w, h: 48 } : { x: cx - 28, y: cy - B - 10, w: 56, h: 2 * B + 120 });
 
         // Nimet
-        ctx.fillStyle = onPk ? HIILI : HARMAA;
-        ctx.font = `${onPk ? 600 : 500} 13px "IBM Plex Sans", system-ui, sans-serif`;
+        const korostus = onPk || !!omaOsa;
+        ctx.fillStyle = korostus ? HIILI : HARMAA;
+        ctx.font = `${korostus ? 600 : 500} 13px "IBM Plex Sans", system-ui, sans-serif`;
+        const mono = `500 11px "IBM Plex Mono", ui-monospace, monospace`;
         if (pysty) {
+          const tagit: [string, string][] = [];
+          if (omaOsa) tagit.push([omaOsa.nimi.toUpperCase(), HARMAA]);
+          if (onPk) tagit.push(["PULLONKAULA", "#8A5A00"]);
+          const x = cx - B - 14;
+          let y = cy - tagit.length * 8;
           ctx.textAlign = "right";
           ctx.textBaseline = "middle";
-          ctx.fillText(OSAT[i].lyhyt, cx - B - 14, cy - (onPk ? 7 : 0));
-          if (onPk) {
-            ctx.font = `500 11px "IBM Plex Mono", ui-monospace, monospace`;
-            ctx.fillStyle = "#8A5A00";
-            ctx.fillText("PULLONKAULA", cx - B - 14, cy + 9);
+          ctx.fillText(OSAT[i].lyhyt, x, y);
+          ctx.font = mono;
+          for (const [teksti, vari] of tagit) {
+            y += 16;
+            ctx.fillStyle = vari;
+            ctx.fillText(teksti, x, y);
           }
         } else {
           ctx.textAlign = "center";
           ctx.textBaseline = "top";
-          wrapText(ctx, OSAT[i].lyhyt, cx, cy + B + 14, Math.min(110, (L / (OSAT.length + 1)) - 8), 16);
+          const yLoppu = wrapText(ctx, OSAT[i].lyhyt, cx, cy + B + 14, Math.min(110, (L / (OSAT.length + 1)) - 8), 16);
+          if (omaOsa) {
+            ctx.font = mono;
+            ctx.fillStyle = HARMAA;
+            wrapText(ctx, omaOsa.nimi.toUpperCase(), cx, yLoppu + 18, Math.min(120, (L / (OSAT.length + 1)) - 4), 14);
+          }
           if (onPk) {
-            ctx.font = `500 11px "IBM Plex Mono", ui-monospace, monospace`;
+            ctx.font = mono;
             ctx.fillStyle = "#8A5A00";
             ctx.fillText("PULLONKAULA", cx, cy - B - 26);
           }
@@ -298,7 +331,7 @@ function rectBetween(ctx: CanvasRenderingContext2D, x1: number, y1: number, x2: 
   ctx.fillRect(Math.min(x1, x2), Math.min(y1, y2), Math.abs(x2 - x1), Math.abs(y2 - y1));
 }
 
-function wrapText(ctx: CanvasRenderingContext2D, text: string, x: number, y: number, max: number, lh: number) {
+function wrapText(ctx: CanvasRenderingContext2D, text: string, x: number, y: number, max: number, lh: number): number {
   const sanat = text.split(" ");
   let rivi = "";
   let yy = y;
@@ -311,4 +344,5 @@ function wrapText(ctx: CanvasRenderingContext2D, text: string, x: number, y: num
     } else rivi = koe;
   }
   if (rivi) ctx.fillText(rivi, x, yy);
+  return yy;
 }

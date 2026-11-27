@@ -30,6 +30,7 @@ updated: 2026-11-09
       <div class="part"><div class="mono">Teknologia</div><h3>Ohjelmistot</h3><p>Oikeat järjestelmät tekevät kasvusta toistettavaa.</p></div>
       <div class="part"><div class="mono">Ihmiset</div><h3>Avainhenkilöt</h3><p>Jos avainpaikka on auki, muu koneisto ei vedä.</p></div>
     </div>
+    <!--elementti:pullonkaula-->
     <p style="margin-top:28px">Jokaisesta osasta vastaa Boostaamon asiantuntijayhtiö.</p>
     <a class="btn o" href="/kasvukoneisto">Lue lisää kasvukoneistosta</a>
   </div>
