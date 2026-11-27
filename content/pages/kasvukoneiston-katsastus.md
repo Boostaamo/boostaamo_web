@@ -9,7 +9,7 @@ updated: 2026-11-09
     <div class="mono" style="color:#5E5959;margin-bottom:18px">Kasvukoneiston katsastus · maksuton</div>
     <h1>Mikä yrityksesi kasvua jarruttaa?</h1>
     <p class="lead">Kun kasvu hidastuu, syytä on vaikea nähdä keskeltä arkea. Kasvu muodostuu kokonaisuudesta, ja katsastus näyttää sen sinulle yhdessä vartissa. Tarkoitettu omistajalle tai toimitusjohtajalle.</p>
-    <a class="btn" href="#">Aloita katsastus</a>
+    <a class="btn" href="/yhteys?aihe=Kasvukoneiston%20katsastus" data-track="katsastus_aloitus">Aloita katsastus</a>
   </div>
 </section><div class="hkuva"><img src="/kuvat/hero-muistiinpanot-2048.webp" srcset="/kuvat/hero-muistiinpanot-1024.webp 1024w, /kuvat/hero-muistiinpanot-2048.webp 2048w" sizes="100vw" width="2048" height="1366" fetchpriority="high" alt="Nuori mies tekee muistiinpanoja keskustelun aikana" style="object-position:center 30%"></div>
 <section>
@@ -26,7 +26,7 @@ updated: 2026-11-09
   <div class="wrap" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:40px">
     <div><h2>Mitä saat</h2>
       <ul style="margin:18px 0 0;padding-left:1.2em;line-height:1.9"><li>kokonaiskuvan johtamisesta, myynnistä ja markkinoinnista, taloudesta, automaatiosta, teknologiasta ja avainhenkilöistä</li><li>tiedon siitä, mihin kannattaa tarttua ensin</li><li>suosituksen seuraavasta askeleesta</li></ul></div>
-    <div class="panel" style="margin-top:0"><h3>Mitä katsastukseen ei sisälly</h3><p style="margin-top:10px">Henkilöstön haastattelut tai data-analyysi. Ne kuuluvat <a href="/palvelut/syvakatsastukset">syväkatsastukseen</a>.</p><a class="btn" href="#">Aloita katsastus</a></div>
+    <div class="panel" style="margin-top:0"><h3>Mitä katsastukseen ei sisälly</h3><p style="margin-top:10px">Henkilöstön haastattelut tai data-analyysi. Ne kuuluvat <a href="/palvelut/syvakatsastukset">syväkatsastukseen</a>.</p><a class="btn" href="/yhteys?aihe=Kasvukoneiston%20katsastus" data-track="katsastus_aloitus">Aloita katsastus</a></div>
   </div>
 </section>
 <section style="border-bottom:0">

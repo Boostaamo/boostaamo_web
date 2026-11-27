@@ -24,5 +24,7 @@
     { "label": "Webinaarit", "href": "/webinaarit" },
     { "label": "Tietosuoja", "href": "/tietosuoja" }
   ],
-  "legalEntity": "Kriha Invest Oy"
+  "legalEntity": "Kriha Invest Oy",
+  "leadSite": "boostaamo.fi",
+  "sameAs": ["https://gfc.fi", "https://dimma.fi", "https://grofi.fi", "https://softarobotit.fi", "https://bistek.fi"]
 }

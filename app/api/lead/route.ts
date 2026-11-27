@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { isProduction, site } from "@/lib/site";
 
 export const runtime = "nodejs";
 
@@ -92,10 +93,57 @@ export async function POST(req: Request) {
     receivedAt: new Date().toISOString(),
   };
 
+  // Ensisijaisesti konsernin yhteinen liidirekisteri (Supabase, Hannu 26.11.2026).
+  // Käytössä vain julkinen avain ja RPC-funktio lisaa_liidi; taulua ei lueta sivustolta.
+  const sbUrl = process.env.SUPABASE_URL?.replace(/\/$/, "");
+  const sbKey = process.env.SUPABASE_PUBLISHABLE_KEY;
+  if (sbUrl && sbKey) {
+    const l = {
+      sivusto: site.leadSite,
+      rekisterinpitaja: site.legalEntity,
+      lahde: kind,
+      nimi: lead.name,
+      sahkoposti: lead.email,
+      puhelin: lead.phone,
+      yritys: lead.company,
+      tarve: lead.topic,
+      viesti: lead.message,
+      webinaari: lead.webinar,
+      vastaukset: {
+        webinaari: lead.webinar,
+        sopiva_aika: lead.preferredTime,
+        osallistujia: lead.participants,
+        kvartaalikirje: lead.newsletter,
+      },
+      suostumus: true,
+      sivu: lead.page,
+      lahde_sivu: lead.source,
+      viittaaja: lead.referrer,
+      utm: lead.utm,
+      esikatselu: !isProduction,
+    };
+    try {
+      const res = await fetch(`${sbUrl}/rest/v1/rpc/lisaa_liidi`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json", apikey: sbKey, Authorization: `Bearer ${sbKey}` },
+        body: JSON.stringify({ l }),
+      });
+      if (!res.ok) {
+        console.error(`Liidin tallennus epäonnistui, tila ${res.status}.`);
+        return NextResponse.json({ ok: false, error: "Lähetys epäonnistui. Yritä myöhemmin uudelleen." }, { status: 502 });
+      }
+      return NextResponse.json({ ok: true });
+    } catch {
+      console.error("Liidin tallennus epäonnistui (verkkovirhe).");
+      return NextResponse.json({ ok: false, error: "Lähetys epäonnistui. Yritä myöhemmin uudelleen." }, { status: 502 });
+    }
+  }
+
+  // Varapolku: webhook (esim. Apps Script), jos Supabasea ei ole vielä kytketty.
   const url = process.env.LEAD_WEBHOOK_URL;
   if (!url) {
     // Ei lokiteta henkilötietoja
-    console.error("LEAD_WEBHOOK_URL puuttuu: liidiä ei voitu lähettää.");
+    console.error("Liidirekisteriä ei ole kytketty (SUPABASE_URL ja SUPABASE_PUBLISHABLE_KEY tai LEAD_WEBHOOK_URL).");
     return NextResponse.json({ ok: false, error: "Lomake ei ole juuri nyt käytössä." }, { status: 500 });
   }
 

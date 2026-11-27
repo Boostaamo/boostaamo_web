@@ -54,15 +54,10 @@ updated: 2026-11-09
     <h2 style="margin-top:10px">Mikä jarruttaa kasvuasi? Ota paikkasi webinaarissa</h2>
     <p style="margin-top:14px">Maksuttomissa 45 minuutin webinaareissa käsitellään yksi kasvukoneiston osa kerrallaan, ja keskustelulle jää aikaa.</p>
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:20px;margin:28px 0">
-      <div class="wcard"><div class="mono" style="color:#FFB000">to 26.11.2026</div><h3 style="margin-top:8px">Onko tuotannon kymppisi jäänyt yksin?</h3></div>
-      <div class="wcard"><div class="mono" style="color:#FFB000">to 3.12.2026</div><h3 style="margin-top:8px">Mitä tekoäly voi tehdä yrityksellesi ja mitä se ei korjaa?</h3></div>
+      <div class="wcard" data-asti="2026-11-26" data-ryhma="etu-web"><div class="mono" style="color:#FFB000">to 26.11.2026</div><h3 style="margin-top:8px">Onko tuotannon kymppisi jäänyt yksin?</h3></div>
+      <div class="wcard" data-asti="2026-12-03" data-ryhma="etu-web"><div class="mono" style="color:#FFB000">to 3.12.2026</div><h3 style="margin-top:8px">Mitä tekoäly voi tehdä yrityksellesi ja mitä se ei korjaa?</h3></div>
     </div>
     <a class="btn" href="/webinaarit">Katso webinaarit ja ilmoittaudu</a>
-  </div>
-</section>
-<section id="todisteet">
-  <div class="wrap">
-    <div class="ph"><div><div class="mono">Paikka asiakastarinalle</div><p style="margin:8px auto 0">Ei caseja 1. versiossa. Anonymisoitu casekuvaus tulee tähän, kun lähtötilanne ja mitattu tulos on vahvistettu luvalla.</p></div></div>
   </div>
 </section>
 <section id="yhteys" style="border-bottom:0">

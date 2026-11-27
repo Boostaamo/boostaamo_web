@@ -1,6 +1,6 @@
 ---
 title: "Webinaarit omistajayrittäjille"
-description: "Maksuttomat webinaarit käsittelevät kukin yhtä kasvukoneiston osaa. Ilmoittaudu 26.11. tai 3.12."
+description: "Maksuttomat 45 minuutin webinaarit omistajayrittäjille. Jokainen webinaari käsittelee yhtä kasvukoneiston osaa, ja keskustelulle jää aikaa. Ilmoittaudu mukaan."
 updated: 2026-11-09
 ---
 
@@ -9,13 +9,13 @@ updated: 2026-11-09
     <div class="mono" style="color:#5E5959;margin-bottom:18px">Webinaarit</div>
     <h1>Webinaarit omistajayrittäjille</h1>
     <p class="lead">Maksuttomat webinaarit käsittelevät kukin yhtä kasvukoneiston osaa. Jokaisessa on 30 minuuttia asiaa ja 15 minuuttia aikaa kysymyksille.</p>
-    <div class="cta"><a class="btn" href="#to-26-11">Ilmoittaudu 26.11.</a><a class="btn o" href="#to-3-12">Ilmoittaudu 3.12.</a></div>
+    <div class="cta"><a class="btn" href="#to-26-11" data-asti="2026-11-26">Ilmoittaudu 26.11.</a><a class="btn o" href="#to-3-12" data-asti="2026-12-03">Ilmoittaudu 3.12.</a></div>
   </div>
 </section><div class="hkuva"><img src="/kuvat/hero-podcast-2048.webp" srcset="/kuvat/hero-podcast-1024.webp 1024w, /kuvat/hero-podcast-2048.webp 2048w" sizes="100vw" width="2048" height="2560" fetchpriority="high" alt="Nainen kuulokkeet päässä mikrofonin ääressä" style="object-position:center 30%"></div>
 <section style="padding:24px 0 72px" id="ilmoittautuminen">
   <div class="wrap">
     <div class="mono" style="color:#5E5959;margin-bottom:14px">Valitse webinaari ja ilmoittaudu</div>
-    <article class="wcardL" id="to-26-11">
+    <article class="wcardL" id="to-26-11" data-asti="2026-11-26">
       <div class="winfo">
         <div class="dbadge"><span class="dd">26.11.</span><span class="mono">torstai · klo 8.30–9.15</span></div>
         <div class="mono" style="color:#8A5A00;margin-top:14px">Webinaari 1 · Google Meet</div>
@@ -28,7 +28,7 @@ updated: 2026-11-09
         <!--form:webinaari|2026-11-26 Onko tuotannon kymppisi jäänyt yksin?-->
       </div>
     </article>
-    <article class="wcardL dk" id="to-3-12">
+    <article class="wcardL dk" id="to-3-12" data-asti="2026-12-03">
       <div class="winfo">
         <div class="dbadge"><span class="dd">3.12.</span><span class="mono">torstai · klo 8.30–9.15</span></div>
         <div class="mono" style="color:#FFB000;margin-top:14px">Webinaari 2 · Google Meet</div>

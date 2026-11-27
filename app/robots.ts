@@ -1,8 +1,8 @@
 import type { MetadataRoute } from "next";
-import { isProduction, site } from "@/lib/site";
+import { indeksoitava, site } from "@/lib/site";
 
 export default function robots(): MetadataRoute.Robots {
-  if (!isProduction) {
+  if (!indeksoitava) {
     return { rules: { userAgent: "*", disallow: "/" } };
   }
   return {
